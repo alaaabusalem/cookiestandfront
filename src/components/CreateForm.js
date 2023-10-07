@@ -26,23 +26,23 @@ const Creat= async(e)=>{
 }
     return(<>
     <div className='m-5'>
-    <Form className='d-flex flex-column' onSubmit={Creat}>
-     <fieldset className='border'>
+    <Form className='d-flex flex-column creatform' onSubmit={Creat}>
+     <fieldset >
       <legend className='text-center'>Enter a New Location information</legend>
-      <div className='d-flex flex-row mt-5 pt-5'>
+      <div className='d-flex flex-row mt-5 pt-5 '>
         <label>Location</label>
         <Form.Control type="text" placeholder="Name" name="Location"  onChange={(e)=>setLocation(e.target.value)}/>
       </div >
       <div className='d-flex flex-row flex-wrap justify-content-around mt-5'>
-        <div>
+        <div className='field'>
         <label>Minimum customers per hour </label>
         <Form.Control type="number" placeholder="0" name="Minimum"  onChange={(e)=>setMin(e.target.value)}/>  
         </div>
-        <div>
+        <div className='field'>
         <label>Maximum customers per hour </label>
         <Form.Control type="number" placeholder="0" name="Maximum" onChange={(e)=>setMax(e.target.value)}/>  
         </div>
-        <div>
+        <div className='field'>
         <label>Average cookies per sale</label>
         <Form.Control type="number" placeholder="0" name="Average" onChange={(e)=>setAvg(e.target.value)}/>  
         </div>

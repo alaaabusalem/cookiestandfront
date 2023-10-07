@@ -42,9 +42,9 @@ function SumTotal(){
  
     return(
     <>
-    <Table striped bordered hover size="sm">
+    <table striped bordered hover size="sm" className=' table-bordered'>
       <thead>
-        <tr>
+        <tr className="table-success">
           <th>Location</th>
           <th>6:00 am</th>
           <th>7:00 am</th> 
@@ -68,7 +68,7 @@ function SumTotal(){
         
       {ReportArray.map(item=>{
          return(
-            <tr key={item.cookieStandId}>
+            <tr key={item.cookieStandId} className="table-success">
                 <td>{item.location}</td>
 
                 {item.hourly_sales.map((val,index)=>{
@@ -84,7 +84,7 @@ function SumTotal(){
       })  
        
     }
-    <tr>
+    <tr className='table-success'>
         <td>Total</td>
         {ReportArray.forEach(element => {
             total1=total1+element.hourly_sales[0];
@@ -121,7 +121,7 @@ function SumTotal(){
     </tr>
     
       </tbody>
-    </Table>
+    </table>
     </>
     );
 }
