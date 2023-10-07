@@ -21,7 +21,7 @@ const Creat= async(e)=>{
     average_cookies_per_sale: Avg
     
   }
-  const result= await axios.post("https://localhost:7049/api/CookieStands",obj);
+  const result= await axios.post("https://cookie-stand20231007094403.azurewebsites.net/api/CookieStand",obj);
   console.log(result);
 }
     return(<>

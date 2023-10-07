@@ -1,4 +1,5 @@
 import CreateForm from "./CreateForm";
+import ReportTable from "./ReportTable";
 
 export default function Main(){
 
@@ -7,6 +8,7 @@ export default function Main(){
     
     <div>
     <CreateForm/>
+    <ReportTable/>
     </div>
     
     </>);
