@@ -28,11 +28,9 @@ function SumTotal(){
     useEffect( ()=>{
         axios.get("https://cookie-stand20231007094403.azurewebsites.net/api/CookieStands")
         .then(respons=>{
-            console.log(respons.data);
             SetReportArray(respons.data);
         })
         .catch(err=>{
-            console.log(err);
         })
         ;
       
@@ -42,7 +40,8 @@ function SumTotal(){
  
     return(
     <>
-    <table striped bordered hover size="sm" className=' table-bordered'>
+    
+    <table  className=' table-bordered'>
       <thead>
         <tr className="table-success">
           <th>Location</th>

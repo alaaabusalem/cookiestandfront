@@ -22,7 +22,7 @@ const Creat= async(e)=>{
     
   }
   const result= await axios.post("https://cookie-stand20231007094403.azurewebsites.net/api/CookieStand",obj);
-  console.log(result);
+ 
 }
     return(<>
     <div className='m-5'>
