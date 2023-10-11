@@ -24,8 +24,9 @@ function App() {
     {  islogin ?
       <div>
       <Head/>
+      <div>{Token}</div>
            <Routes>
-            <Route path='/' element={<Main/>}></Route>
+            <Route path='/' element={<Main Token={Token}/>}></Route>
       
            </Routes>
            <Footer/>

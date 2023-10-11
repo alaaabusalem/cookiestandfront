@@ -46,7 +46,7 @@ const Creat= async(e)=>{
         <label>Average cookies per sale</label>
         <Form.Control type="number" placeholder="0" name="Average" onChange={(e)=>setAvg(e.target.value)}/>  
         </div>
-      <Button variant="primary" type="submit">
+      <Button  class="button-creat" variant="primary" type="submit">
         Create
       </Button>
       </div>

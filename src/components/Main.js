@@ -2,7 +2,7 @@ import { useState } from "react";
 import CreateForm from "./CreateForm";
 import ReportTable from "./ReportTable";
 
-export default function Main(){
+export default function Main(props){
 const [count,setcount]=useState(0);
 
 function UpdateCount(val){
@@ -16,7 +16,7 @@ function UpdateCount(val){
     <CreateForm UpdateCount={UpdateCount}/>
     </div>
     <div className=" d-flex flex-row justify-content-center table-div">
-    <ReportTable count={count}/>
+    <ReportTable count={count} Token={props.Token} UpdateCount={UpdateCount}/>
     </div>
     </div>
     
