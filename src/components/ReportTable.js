@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 
-export default function ReportTable(){
+export default function ReportTable(props){
     //const [Sum,SetSum]= useState(0);
 function SumTotal(){
 
@@ -35,7 +35,7 @@ function SumTotal(){
         ;
       
 
-    },[]);
+    },[props.count]);
 
  
     return(

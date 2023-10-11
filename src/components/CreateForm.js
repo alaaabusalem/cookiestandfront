@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 
-export default function CreateForm(){
+export default function CreateForm(props){
 
     const [Location,setLocation] = useState('');
     const [Min,setMin] = useState(0);
@@ -22,7 +22,7 @@ const Creat= async(e)=>{
     
   }
   const result= await axios.post("https://cookie-stand20231007094403.azurewebsites.net/api/CookieStand",obj);
- 
+ props.UpdateCount(1);
 }
     return(<>
     <div className='m-5'>
